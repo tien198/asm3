@@ -21,7 +21,7 @@ function creatUser() {
     userArr.push(user)
     const userArrJson = JSON.stringify(userArr)
     saveToStorage(usrs_KEY, userArrJson)
-    location.href = '/index.html'
+    location.href = '../index.html'
 }
 
 

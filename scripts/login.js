@@ -16,7 +16,7 @@ function login(e) {
     const currUser = userArr.find(usr => usr.userName === userName.value && usr.password === password.value)
     if (currUser) {
         saveToStorage(currUser_KEY, JSON.stringify(currUser))
-        location.href = '/index.html'
+        location.href = '../index.html'
     }
     else {
         alert('user name or password was wrong')

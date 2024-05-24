@@ -22,5 +22,5 @@ else loginModal.classList.remove('d-none')
 // logout removing 'curr_user' item in localtorage
 function logOut() {
     removeFromStorage(currUser_KEY)
-    location.href = '/index.html'
+    location.href = './index.html'
 }

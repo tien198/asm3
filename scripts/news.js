@@ -11,7 +11,7 @@ const jsonUser = JSON.parse(getFromStorage(currUser_KEY)) || null
 const currUser = User.parseUser(jsonUser)
 if (!currUser) {
     alert('Please log in to read news!')
-    location.href = '/index.html'
+    location.href = '../index.html'
 }
 
 

@@ -7,7 +7,7 @@ const addBtn = document.querySelector('#btn-add')
 const currUser = getCurUser()
 if (!currUser) {
     alert('Please log in to view your tasks!')
-    location.href = '/index.html'
+    location.href = '../index.html'
 }
 
 // getCurUsrTasks() and getTaskList() are declared in storage.js // Ultilities
