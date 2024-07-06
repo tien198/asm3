@@ -45,7 +45,8 @@ class Pagination {
     */
     initial(totalResults, pageSize) {
         let total = totalResults / pageSize
-        this.#totalPages = Number.isInteger(total) ? total : Math.trunc(total) + 1
+        this.#totalPages = Number.isInteger(total) ? total : Math.trunc(total) + 1;
+        this.#totalPages = this.#totalPages >= 10 ? 10 : this.#totalPages;
         // create 'prevItem' and 'nextItem' fields then push them to 'paginationArr' field through 'createPaginationArr()' method
         this.createPreItem ? this.prevItem = this.createPreItem() : {}
         this.createNextItem ? this.nextItem = this.createNextItem() : {}
